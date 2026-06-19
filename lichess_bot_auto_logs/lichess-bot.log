@@ -1,0 +1,18 @@
+2026-06-19 20:24:31,038 __main__ (lichess_bot.py:1206) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess机器人 版本2026.5.21.1 在Windows 11
+    .  //__\
+    .  )___(   在 Lichess 上与机器人对弈
+    
+2026-06-19 20:24:31,072 __main__ (lichess_bot.py:1296) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "F:\桌面\项目\lichess-bot-gui\src\lichess_bot.py", line 1287, in start_program
+    start_lichess_bot()
+    ~~~~~~~~~~~~~~~~~^^
+  File "F:\桌面\项目\lichess-bot-gui\src\lichess_bot.py", line 1209, in start_lichess_bot
+    CONFIG = load_config(args.config or "./config.yml")
+  File "F:\桌面\项目\lichess-bot-gui\src\config.py", line 431, in load_config
+    with open(config_file) as stream:
+         ~~~~^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './config.yml'

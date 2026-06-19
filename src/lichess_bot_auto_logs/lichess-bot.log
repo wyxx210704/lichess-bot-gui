@@ -1,0 +1,333 @@
+2026-06-19 20:25:12,066 __main__ (lichess_bot.py:1206) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess机器人 版本2026.5.21.1 在Windows 11
+    .  //__\
+    .  )___(   在 Lichess 上与机器人对弈
+    
+2026-06-19 20:25:12,145 config (config.py:281) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: engine_name
+  debug: false
+  working_dir: ''
+  protocol: uci
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+    normalization: none
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      max_pieces: 8
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+
+2026-06-19 20:25:12,146 config (config.py:282) DEBUG ====================
+2026-06-19 20:25:12,153 config (config.py:281) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: engine_name
+  debug: false
+  working_dir: "F:\\\u684C\u9762\\\u9879\u76EE\\lichess-bot-gui\\src"
+  protocol: uci
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+    normalization: none
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_time: 10800
+      max_pieces: 8
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  interpreter: null
+  interpreter_options: []
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+  block_list: []
+  online_block_list: []
+  allow_list: []
+  min_rating: 0
+  max_rating: 4000
+  rating_difference: null
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+  block_list: []
+  online_block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_directory: null
+pgn_file_grouping: game
+
+2026-06-19 20:25:12,153 config (config.py:282) DEBUG ====================
+2026-06-19 20:25:12,153 __main__ (lichess_bot.py:1296) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "F:\桌面\项目\lichess-bot-gui\src\lichess_bot.py", line 1287, in start_program
+    start_lichess_bot()
+    ~~~~~~~~~~~~~~~~~^^
+  File "F:\桌面\项目\lichess-bot-gui\src\lichess_bot.py", line 1209, in start_lichess_bot
+    CONFIG = load_config(args.config or "./config.yml")
+  File "F:\桌面\项目\lichess-bot-gui\src\config.py", line 446, in load_config
+    validate_config(CONFIG)
+    ~~~~~~~~~~~~~~~^^^^^^^^
+  File "F:\桌面\项目\lichess-bot-gui\src\config.py", line 302, in validate_config
+    config_assert(os.path.isfile(engine) or CONFIG["engine"]["protocol"] == "homemade",
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  f"The engine {engine} file does not exist.")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\桌面\项目\lichess-bot-gui\src\config.py", line 70, in config_assert
+    raise Exception(error_message)
+Exception: The engine ./engines/engine_name file does not exist.
