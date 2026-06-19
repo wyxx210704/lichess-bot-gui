@@ -1,6 +1,5 @@
 modification_instructions = '''
-
-# 配置修改说明
+# gui_config.json配置修改说明
 
 ## chess.svg.board()尺寸与样式
 - **`size`**
@@ -24,10 +23,8 @@ modification_instructions = '''
 - **`borders`**
     显示棋盘外边框，默认 `False`，设 `True` 开启。
 
----
-# 注意事项
-
-**不要**破坏文件原本结构，这样会导致*运行失败*
+## game_viewer要观看的账号
+修改`game_viewer_user_name`项目为将要观战的账号
 '''
 
 from PyQt6.QtWidgets import *
