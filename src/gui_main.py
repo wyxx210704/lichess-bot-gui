@@ -9,6 +9,7 @@ from game_viewer import GameViewer
 from edit_bot_config import BotConfig
 from edit_gui_config import GuiConfig
 from edit_style import EditStyle
+from lichess_api_custom_call import LichessCurlTool
 
 class StartupDialog(QDialog):
     """启动选项对话框"""
@@ -44,11 +45,17 @@ class StartupDialog(QDialog):
             self,
         )
 
+        self.check_box_6 = QCheckBox(
+            '启动组件：lichess api自定义调用',
+            self,
+        )
+
         self.layout_.addWidget(self.check_box_1)
         self.layout_.addWidget(self.check_box_2)
         self.layout_.addWidget(self.check_box_3)
         self.layout_.addWidget(self.check_box_4)
         self.layout_.addWidget(self.check_box_5)
+        self.layout_.addWidget(self.check_box_6)
 
         self.button = QPushButton(
             '以该配置启动程序',
@@ -59,7 +66,7 @@ class StartupDialog(QDialog):
         self.layout_.addWidget(self.button)
 
         self.layout_.addWidget(QLabel(
-            'lichess-bot-gui版本1.2\n基于lichess-bot版本2026.5.21.1开发',
+            'lichess-bot-gui版本1.4\n基于lichess-bot版本2026.5.21.1开发',
             self
         ))
     
@@ -71,6 +78,7 @@ class StartupDialog(QDialog):
             self.check_box_3.isChecked(),
             self.check_box_4.isChecked(),
             self.check_box_5.isChecked(),
+            self.check_box_6.isChecked(),
         ]
 
 def main():
@@ -139,6 +147,13 @@ def main():
             tool_box.addItem(
                 gui_config,
                 '修改gui样式',
+            )
+
+        if config[5]:
+            api_custom_call = LichessCurlTool(window)
+            tool_box.addItem(
+                api_custom_call,
+                'lichess api自定义调用',
             )
 
         window.show()

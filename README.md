@@ -1,4 +1,4 @@
-# lichess-bot-gui，版本1.2
+# lichess-bot-gui，版本1.4
 本项目基于lichess-bot项目二次开发，使用AGPL协议
 原项目：[点击进入原项目](https://github.com/lichess-bot-devs/lichess-bot)
 
@@ -127,8 +127,7 @@ chmod +x run_bot_without_gui.sh
 
 ### 启动成功标志
 控制台输出：
-`Logged in as @你的Bot用户名`
-`Waiting for challenges...`
+![image.png](https://api.keepwork.com/ts-storage/siteFiles/49758/raw#1781939619323image.png)
 
 此时打开 https://lichess.org/@你的Bot名，头像旁显示**绿色在线圆点**，其他人即可发起挑战。
 
@@ -176,20 +175,34 @@ chmod +x run_bot_without_gui.sh
 # 修改配置相关其他内容
 > 开始运行gui_main.py的时候会弹出一个启动配置对话框
 >
+> ![image.png](https://api.keepwork.com/ts-storage/siteFiles/49757/raw#1781939418222image.png)
+>
 > 可以自由勾选各个组件，每个组件对应一个功能
 >
 > 修改完成后重启生效
 
 ## `修改机器人配置`组件，用来修改config.yml
 - 详细信息请参照：`使用教程-→五、配置 config.yml（核心配置）`
+![image.png](https://api.keepwork.com/ts-storage/siteFiles/49761/raw#1781939997450image.png)
 
-## `修改该程序配置`组件，用来修改gui_config.json
+## `修改gui配置`组件，用来修改gui_config.json
 - 用处：GUI程序的一些配置
 - json不能注释，所以修改方式请参照下方的`gui_config.json配置修改说明`
+![image.png](https://api.keepwork.com/ts-storage/siteFiles/49762/raw#1781940033003image.png)
 
-## `修改该程序样式`组件，用来修改style.txt
+## `修改gui样式`组件，用来修改style.txt
 - 用处：主窗口的样式
 - 格式请参照qt样式表的格式
+![image.png](https://api.keepwork.com/ts-storage/siteFiles/49763/raw#1781940075396image.png)
+
+# 实用组件
+- 查看对局
+    - 查看特定用户当前对局
+![image.png](https://api.keepwork.com/ts-storage/siteFiles/49759/raw#1781939797055image.png)
+
+- lichess api自定义调用
+    - 自己输入命令来调用lichess api
+![image.png](https://api.keepwork.com/ts-storage/siteFiles/49764/raw#1781940184776image.png)
 
 # gui_config.json配置修改说明
 
