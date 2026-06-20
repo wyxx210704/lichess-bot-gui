@@ -59,7 +59,7 @@ class StartupDialog(QDialog):
         self.layout_.addWidget(self.button)
 
         self.layout_.addWidget(QLabel(
-            'lichess-bot-gui版本1.1\n基于lichess-bot版本2026.5.21.1开发',
+            'lichess-bot-gui版本1.2\n基于lichess-bot版本2026.5.21.1开发',
             self
         ))
     
