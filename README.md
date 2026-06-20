@@ -112,17 +112,18 @@ matchmaking:
 ```
 
 ## 六、启动机器人
-### windows可以双击首页的bat文件就能运行
 > run_bot_without_gui是没有GUI，直接运行lichess-bot的
 >
 > run_gui是启动整个GUI工具
 
-### 由于作者是在windows上面编写这个项目的，所以暂时无法提供macos/linux两个系统的运行方式
-但可以给个提示
-1. 进入src文件夹
-2. 然后就开始运行，运行方式如下
-    - 如果直接以命令行程序形式运行，那就直接运行lichess_bot.py
-    - 如果要整个启动gui工具，那就直接运行run_gui.py
+- windows用户直接双击运行首页的bat文件
+- macos/linux用户先添加执行权限，然后再运行首页的sh文件
+
+以下是macos/linux用户添加执行权限的命令
+```bash
+chmod +x run_gui.sh
+chmod +x run_bot_without_gui.sh
+```
 
 ### 启动成功标志
 控制台输出：
